@@ -9,61 +9,87 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="resource/css/style.css"/>
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="resource/js/tableSorting.js"></script>
+        <style>
+            .arrow{
+               content: "\2191";
+            }
+        </style>
     </head>
     <body>
         <h1><span class="blue">&lt;</span>Table<span class="blue">&gt;</span> <span class="yellow">Sorting</span></h1>
         <h2></h2>
 
-        <table class="container">
-            <thead class="thead">
-                <tr>
-                    <th><h1>Sites</h1></th>
-                    <th><h1>Views</h1></th>
-                    <th><h1>Clicks</h1></th>
-                    <th><h1>Average</h1></th>
+        <table class="container sorting-apply">
+            <thead class="thead sorting-header">
+                <tr >
+                    <th><h1>Sr</h1></th>
+                    <th class="sorting-th"><h1>Name</h1></th>
+                    <th class="sorting-th"><h1>Age</h1></th>
+                    <th class="sorting-th"><h1>DOB</h1></th>
+                    <th class="sorting-th"><h1>Salary</h1></th>
                 </tr>
             </thead>
             <tbody class="tbody">
                 <tr>
-                    <td>Google</td>
-                    <td>9518</td>
-                    <td>6369</td>
-                    <td>01:32:50</td>
+                    <td class="sorting-sr-td">1</td>
+                    <td>Nitesh Kumar</td>
+                    <td>27</td>
+                    <td>17/09/1996</td>
+                    <td>25000.00</td>
+                </tr>
+                 <tr>
+                    <td class="sorting-sr-td">2</td>
+                    <td>Sweety</td>
+                    <td>35</td>
+                    <td>14/01/1985</td>
+                    <td>50000.00</td>
+                </tr>
+                 <tr>
+                    <td  class="sorting-sr-td">3</td>
+                    <td>Ashwini</td>
+                    <td>23</td>
+                    <td>15/03/2000</td>
+                    <td>70000.00</td>
+                </tr>
+                 <tr>
+                    <td  class="sorting-sr-td">4</td>
+                    <td>Priyanka Kumari</td>
+                    <td>25</td>
+                    <td>07/12/1998</td>
+                    <td>27500.00</td>
+                </tr>
+                 <tr>
+                    <td class="sorting-sr-td">5</td>
+                    <td>Vikas Prajapat</td>
+                    <td>48</td>
+                    <td>10/05/1975</td>
+                    <td>99500.00</td>
                 </tr>
                 <tr>
-                    <td>Twitter</td>
-                    <td>7326</td>
-                    <td>10437</td>
-                    <td>00:51:22</td>
+                    <td class="sorting-sr-td">6</td>
+                    <td>Divya</td>
+                    <td>18</td>
+                    <td>12/02/2005</td>
+                    <td>4500.00</td>
                 </tr>
                 <tr>
-                    <td>Amazon</td>
-                    <td>4162</td>
-                    <td>5327</td>
-                    <td>00:24:34</td>
+                    <td class="sorting-sr-td">7</td>
+                    <td>Jiya</td>
+                    <td>24</td>
+                    <td>12/02/1999</td>
+                    <td>4500.01</td>
                 </tr>
                 <tr>
-                    <td>LinkedIn</td>
-                    <td>3654</td>
-                    <td>2961</td>
-                    <td>00:12:10</td>
-                </tr>
-                <tr>
-                    <td>CodePen</td>
-                    <td>2002</td>
-                    <td>4135</td>
-                    <td>00:46:19</td>
-                </tr>
-                <tr>
-                    <td>GitHub</td>
-                    <td>4623</td>
-                    <td>3486</td>
-                    <td>00:31:52</td>
+                    <td class="sorting-sr-td">8</td>
+                    <td>Devashish</td>
+                    <td>24</td>
+                    <td>12/02/1999</td>
+                    <td>N/A</td>
                 </tr>
             </tbody>
         </table>
-        <script  src="resource/js/stylehandling.js"></script>
-
     </body>
 </html>

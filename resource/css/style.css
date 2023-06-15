@@ -114,7 +114,7 @@ h2 a {
     transition-property: all;
     transition-timing-function: line;
 }
-.container .thead th:hover {
+.container .thead th.sorting-th:hover {
     background-color: #FFF842;
     color: #403E10;
     font-weight: bold;
